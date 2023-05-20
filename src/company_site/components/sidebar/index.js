@@ -48,12 +48,13 @@ const SideBar = ({ toggle, isOpen }) => {
           <SidebarLink to="/#gallery" onClick={toggle} scroll={scrollWithOffset}>
             Values 
           </SidebarLink>
-          {/* <SidebarRoute to="/blog" onClick={toggle}>
-            Blog
-          </SidebarRoute> */}
           <SidebarLink to="/#footer" onClick={toggle} scroll={scrollWithOffset}>
             Contact Us
           </SidebarLink>
+          <SidebarRoute to="/blog" onClick={toggle}>
+            Media
+          </SidebarRoute>
+          
         </SidebarMenu>
         {/* <div id="sidebar-social-icons">
           <a

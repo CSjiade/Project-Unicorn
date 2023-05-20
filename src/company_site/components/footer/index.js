@@ -87,7 +87,7 @@ const Footer = () => {
         <section id="social-media">
           <div id="social-media-wrap">
           <small id="website-rights">
-            Geylang Capital Markets © {new Date().getFullYear()} All Rights Reserved
+            Mira Capital Markets © {new Date().getFullYear()} All Rights Reserved
             </small>
             {/* <div id="social-icons">
               <a
