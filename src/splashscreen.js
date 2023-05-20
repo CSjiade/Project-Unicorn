@@ -1,5 +1,5 @@
 import React from 'react';
-import Lottie from 'react-lottie';
+import Lottie from 'lottie-react';
 import AppLogo from './company_site/images/alogo.png';
 
 import animationData from './resources/splashscreen.json';
