@@ -104,6 +104,13 @@ a:hover {
     transition: all 0.3s ease 0s;
     width: 65%;
     z-index: 1;
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 20px;
+    }
 }
 
 .featuredPropBox ul li .fptext {
