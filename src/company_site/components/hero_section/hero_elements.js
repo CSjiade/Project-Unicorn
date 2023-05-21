@@ -83,12 +83,12 @@ export const HeroH1 = styled.h1`
 
     @media screen and (max-width: 768px) {
         font-size: 58px;
-        font-family: 'Apple Chancery';
+        font-family: 'cursive';
     }
 
     @media screen and (max-width: 480px) {
         font-size: 18px;
-        font-family: 'Apple Chancery';
+        font-family: 'cursive';
     }
 `;
 
@@ -102,12 +102,12 @@ export const HeroP = styled.p`
     
     @media screen and (max-width: 768px) {
         font-size: 34px;
-        font-family: 'Brush Script';
+        font-family: 'cursive';
     }
 
     @media screen and (max-width: 480px) {
         font-size: 12px;
-        font-family: 'Brush Script';
+        font-family: 'cursive';
     }
 `;
 
