@@ -79,7 +79,7 @@ export const HeroH1 = styled.h1`
     // color:#FFD700;
     font-size: 58px;
     text-align: center;
-    font-family: 'Apple Chancery';
+    font-family: cursive;
 
     @media screen and (max-width: 768px) {
         font-size: 58px;
@@ -98,14 +98,16 @@ export const HeroP = styled.p`
     font-size: 34px;
     text-align: center;
     max-width: 600px;
-    font-family: 'Apple Chancery';
+    font-family: cursive;
     
     @media screen and (max-width: 768px) {
         font-size: 34px;
+        font-family: 'Brush Script';
     }
 
     @media screen and (max-width: 480px) {
         font-size: 12px;
+        font-family: 'Brush Script';
     }
 `;
 
