@@ -12,7 +12,10 @@ a:hover {
     background-color: #0c0c0c;  
     padding-top: 40px;
     padding-bottom: 250px;
+
+
 }
+
 
 .np {
     padding: 0px;
@@ -20,6 +23,7 @@ a:hover {
 
 .featuredPropBox {
     padding-top: 30px;
+ 
 }
 
 .featuredPropBox ul {
@@ -27,15 +31,8 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     list-style: outside none none;
-    padding: 0;
-}
-
-.featuredPropBox ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: outside none none;
-    padding: 0;
+    padding: 0;  
+    
 }
 
 
@@ -47,10 +44,11 @@ a:hover {
     display: block;
     height: 250px;
     margin: 5px;
-    width: 32%;
+    width: 400px;
     position: relative;
     transition: all 0.3s;
     cursor: pointer;
+
 }
 
 .featuredPropBox ul li:after {

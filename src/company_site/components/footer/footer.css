@@ -58,7 +58,7 @@
   }
 
   .footer-link-items {
-    width: 65vw;
+    width: 80vw;
   }
 }
 
@@ -94,7 +94,7 @@
 }
 
 .footer-email {
-  max-width: 35vw;
+  max-width: 60vw;
   font-size: 14px;
   color: #fff
 }
