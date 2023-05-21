@@ -87,7 +87,7 @@ export const HeroH1 = styled.h1`
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 20px;
+        font-size: 18px;
         font-family: 'Apple Chancery';
     }
 `;
