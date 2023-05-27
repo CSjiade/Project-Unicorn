@@ -24,8 +24,8 @@ const AboutSectionStyles = makeStyles((theme) => ({
     height: '100%',
     display: 'grid',
     padding: '1.5em',
-    justifyContent: 'center',
-    alignContent: 'center',
+    justifyContent: 'centre',
+    alignContent: 'centre',
   },
   header: {
     textTransform: 'uppercase',
@@ -34,6 +34,9 @@ const AboutSectionStyles = makeStyles((theme) => ({
   },
   subHeader: {
     fontWeight: 'bold',
+  },
+  bodyText: {
+    textAlign:"justify"
   }
 }));
 

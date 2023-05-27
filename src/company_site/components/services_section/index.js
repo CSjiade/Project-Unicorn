@@ -40,7 +40,7 @@ const ServicesSection = () => {
                 <h5> Mergers & Acquisitions </h5>
                 </div>
              <div class="fptext">
-              <p>We match you with potential buyers of your business and help you to negotiate the best transacton price</p>
+              <p>We match you with potential buyers of your business and help you to negotiate the best transaction price </p>
             </div>
              {/* </a>  */}
              </li>

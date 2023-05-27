@@ -7,6 +7,7 @@
   min-height: 100vh;
   position: relative;
   z-index: 1;
+  
 }
 
 .about-container::before {
@@ -50,4 +51,5 @@
   height: '100%';
   position: absolute;
   padding: 8px 24px;
+
 }
