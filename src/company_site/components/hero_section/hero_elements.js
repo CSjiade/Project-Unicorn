@@ -74,7 +74,7 @@ export const HeroContent = styled.div`
     justify-content: center;
 `;
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled.p`
     color: white;
     // color:#FFD700;
     font-size: 58px;

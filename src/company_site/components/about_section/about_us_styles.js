@@ -24,8 +24,8 @@ const AboutSectionStyles = makeStyles((theme) => ({
     height: '100%',
     display: 'grid',
     padding: '1.5em',
-    justifyContent: 'centre',
-    alignContent: 'centre',
+    justifyContent: 'center',
+    alignContent: 'center',
   },
   header: {
     textTransform: 'uppercase',

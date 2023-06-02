@@ -202,6 +202,8 @@ const NavBar = ({ toggle }) => {
 
 
 
+
+
             {/* <li className="nav-item">
               <HashLink
                 className='nav-link'
@@ -223,8 +225,6 @@ const NavBar = ({ toggle }) => {
               </LinkS>
             </li> */}
 
-
-
           </ul>
     
       </div>
@@ -244,7 +244,7 @@ export default withTheme(NavBar);
             </Button> */}
           //   <a
           //     className="social-icon-link"
-          //     href="https://www.facebook.com/Temirobosolutions"
+          //     href="https://www.facebook.com/"
           //     target="_blank"
           //     rel="noopener noreferrer"
           //     aria-label="Facebook"
@@ -253,7 +253,7 @@ export default withTheme(NavBar);
           //   </a>
           //   <a
           //     className="social-icon-link"
-          //     href="https://www.instagram.com/temi_singapore/"
+          //     href="https://www.instagram.com/"
           //     target="_blank"
           //     rel="noopener noreferrer"
           //     aria-label="Instagram"
@@ -262,7 +262,7 @@ export default withTheme(NavBar);
           //   </a>
           //   <a
           //     className="social-icon-link"
-          //     href="https://www.linkedin.com/company/robosolutions"
+          //     href="https://www.linkedin.com/company/"
           //     target="_blank"
           //     rel="noopener noreferrer"
           //     aria-label="LinkedIn"
@@ -271,7 +271,7 @@ export default withTheme(NavBar);
           //   </a>
           //   <a
           //     className="social-icon-link"
-          //     href="https://youtube.com/channel/UCxOq44vEG251lq8A39RXnYw"
+          //     href="https://youtube.com/channel/"
           //     target="_blank"
           //     rel="noopener noreferrer"
           //     aria-label="YouTube"
