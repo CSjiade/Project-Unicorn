@@ -85,7 +85,7 @@ export const HeroH1 = styled.p`
 
 
     @media screen and (max-width: 850px) {
-        font-size: 58px;
+        font-size: 20px;
         font-family: 'cursive';
     }
 
@@ -109,7 +109,7 @@ animation-delay: 5s;
     font-family: cursive;
     
     @media screen and (max-width: 850px) {
-        font-size: 34px;
+        font-size: 20px;
         font-family: 'cursive';
     }
 
