@@ -1,0 +1,26 @@
+
+.firm-container {
+    text-align: start;
+    background: #0c0c0c;
+    padding-top: 50px;
+}
+
+
+.firm-container h1 {
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #FFD700;
+}
+
+.firm-container p {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 850px) {
+    .firm-container {
+        text-align: start;
+    }
+}
+

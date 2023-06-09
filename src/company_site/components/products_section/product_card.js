@@ -16,7 +16,7 @@ const ProductCard = (props) => {
               Deal Teaser
             </Button>
             <Button className="product-button" color="secondary" variant="contained"
-              onClick={() => window.location = `mailto:ToBeConfirmed@Geylang-Capital.sg`}>
+              onClick={() => window.location = `mailto:ToBeConfirmed@Mira-Capital.sg`}>
               Contact Us
             </Button>
           </div>

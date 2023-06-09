@@ -39,18 +39,29 @@ const SideBar = ({ toggle, isOpen }) => {
           <SidebarLink to="/#about" onClick={toggle} scroll={scrollWithOffset}>
             About Us
           </SidebarLink>
-          <SidebarLink to="/#services" onClick={toggle} scroll={scrollWithOffset}>
+          <SidebarLink to="/#service" onClick={toggle} scroll={scrollWithOffset}>
             Services
           </SidebarLink>
-          <SidebarLink to="/#products" onClick={toggle} scroll={scrollWithOffset}>
+
+          <SidebarRoute to="/projects" onClick={toggle}>
             Projects
-          </SidebarLink>
-          <SidebarLink to="/#gallery" onClick={toggle} scroll={scrollWithOffset}>
+          </SidebarRoute>
+
+
+          {/* <SidebarLink to="/#products" onClick={toggle} scroll={scrollWithOffset}>
+            Projects
+          </SidebarLink> */}
+
+          <SidebarRoute to="/firm" onClick={toggle}>
+            The Firm
+          </SidebarRoute>
+
+          {/* <SidebarLink to="/#gallery" onClick={toggle} scroll={scrollWithOffset}>
             Values 
-          </SidebarLink>
-          <SidebarLink to="/#footer" onClick={toggle} scroll={scrollWithOffset}>
+          </SidebarLink> */}
+          {/* <SidebarLink to="/#footer" onClick={toggle} scroll={scrollWithOffset}>
             Contact Us
-          </SidebarLink>
+          </SidebarLink> */}
           <SidebarRoute to="/blog" onClick={toggle}>
             Media
           </SidebarRoute>

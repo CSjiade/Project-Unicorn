@@ -2,11 +2,10 @@ import React, {useState} from 'react';
 
 import NavBar from '../components/navbar';
 import SideBar from '../components/sidebar';
-import Footer from '../components/footer';
+import Footer from '../components/shared/footer';
 import PressSection from '../components/press_section';
 import BlogSection from '../components/blog_section';
 import { withTheme } from '../../util/theme';
-
 
 const Press = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +21,7 @@ const Press = () => {
       <div style={{height: "80px"}}/>
       <BlogSection/>
       <PressSection/>
-      {/* <Footer/> */}
+      <Footer/>
     </React.Fragment>
   );
 };
