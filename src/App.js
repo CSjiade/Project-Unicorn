@@ -7,10 +7,16 @@ import { makeStyles } from '@material-ui/core/styles';
 import Backdrop from '@material-ui/core/Backdrop';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import SplashScreen from './splashscreen';
-const BlogPage = React.lazy(() => import('./company_site/pages/press'));
+
 const Home = React.lazy(() => import('./company_site/pages/index'));
+const Records = React.lazy(() => import('./company_site/components/records_section'));
+const BlogPage = React.lazy(() => import('./company_site/pages/press'));
+const ProjectPage = React.lazy(() => import('./company_site/pages/projects'));
+const FirmPage = React.lazy(() => import('./company_site/pages/firm'));
+
 const BlogPost1 = React.lazy(() => import('./company_site/components/blog_section/blogs/China-M&A Market-review'));
 const BlogPost2 = React.lazy(() => import('./company_site/components/blog_section/blogs/Asia-Pacific-M&A-Q1-2023'));
+
 
 /**
  * Application's entry point, contains the oruter and routes
@@ -35,9 +41,13 @@ function App() {
           <BlogPage />
         </Route>
 
-        {/* <Route path="/aboutus">
-          <AboutPage />
-        </Route> */}
+        <Route path="/projects">
+          <ProjectPage />
+        </Route>
+
+        <Route path="/firm">
+          <FirmPage />
+        </Route>
 
         <Route path="/blog/China-M&A Market-review">
           <BlogPost1/>

@@ -8,7 +8,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 100vh;
+    height: 115vh;
     max-height: 70vw;
     position: relative;
     z-index: 1;
@@ -53,7 +53,7 @@ export const VideoBg = styled.video`
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    background: #232a34;
+    // background: #232a34;
 `;
 
 export const HeroImg = styled.img`
@@ -80,6 +80,9 @@ export const HeroH1 = styled.p`
     font-size: 58px;
     text-align: center;
     font-family: cursive;
+    animation: cssAnimation 0s 2.0s forwards;
+    visibility: hidden;
+
 
     @media screen and (max-width: 768px) {
         font-size: 58px;
@@ -90,9 +93,14 @@ export const HeroH1 = styled.p`
         font-size: 18px;
         font-family: 'cursive';
     }
+
+    @keyframes cssAnimation {
+        to   { visibility: visible; }
+
 `;
 
 export const HeroP = styled.p`
+animation-delay: 5s; 
     margin-top: 5px;
     color: white;
     font-size: 34px;
@@ -109,21 +117,22 @@ export const HeroP = styled.p`
         font-size: 12px;
         font-family: 'cursive';
     }
+
 `;
 
-export const HeroBtnWrapper = styled.div`
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
+// export const HeroBtnWrapper = styled.div`
+//     margin-top: 32px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// `;
 
-export const ArrowForward = styled(MdArrowForward)`
-    margin-left: 8px;
-    font-size: 20px;
-`;
+// export const ArrowForward = styled(MdArrowForward)`
+//     margin-left: 8px;
+//     font-size: 20px;
+// `;
 
-export const ArrowRight = styled(MdKeyboardArrowRight)`
-    margin-left: 8px;
-    font-size: 20px;
-`;
+// export const ArrowRight = styled(MdKeyboardArrowRight)`
+//     margin-left: 8px;
+//     font-size: 20px;
+// `;

@@ -100,32 +100,41 @@ const NavBar = ({ toggle }) => {
               </LinkS>
             </li>
 
-
             <li className="nav-item">
               <HashLink
                 className="nav-link"
                 scroll={scrollWithOffset}
-                to="/#services"
+                to="/#service"
               >
                 Services
               </HashLink>
               <LinkS
                 className="nav-link-background"
-                to="services"
+                to="service"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
-              >
+                offset={-80}>
                 Services
               </LinkS>
+            </li>
+            
+            
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                to={"/projects"}
+                onClick={startFromTop}
+              >
+                Projects
+              </NavLink>             
             </li>
 
 
 
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <HashLink
                 className="nav-link"
                 scroll={scrollWithOffset}
@@ -144,9 +153,9 @@ const NavBar = ({ toggle }) => {
               >
                 Projects
               </LinkS>
-            </li>
+            </li> */}
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <HashLink
                 className='nav-link'
                 scroll={scrollWithOffset}
@@ -165,14 +174,37 @@ const NavBar = ({ toggle }) => {
               >
                 Values
               </LinkS>
-            </li>
+            </li> */}
+
 
             <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                to={"/blog"}
+                onClick={startFromTop}
+              >
+                Media
+              </NavLink>             
+            </li>
+
+
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                to={"/firm"}
+                onClick={startFromTop}
+              >
+                The Firm
+              </NavLink>             
+            </li>
+
+
+
+            {/* <li className="nav-item">
               <HashLink
                 className='nav-link'
                 scroll={scrollWithOffset}
-                to="/#footer"
-              >
+                to="/#footer">
                 Contact Us
               </HashLink>
               <LinkS
@@ -182,21 +214,12 @@ const NavBar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
-              >
+                offset={-80}>
                   Contact Us
               </LinkS>
-            </li>
+            </li> */}
 
-          <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                to={"/blog"}
-                onClick={startFromTop}
-              >
-                Media
-              </NavLink>             
-            </li>
+  
 
 
 

@@ -1,0 +1,24 @@
+.text1{
+    animation: cssAnimation 0s 2.0s forwards;
+    visibility: hidden;
+    @keyframes cssAnimation {
+        to   { visibility: visible; }
+    }
+}
+
+.text2{
+    animation: cssAnimation 0s 3.0s forwards;
+    visibility: hidden;
+    @keyframes cssAnimation {
+        to   { visibility: visible; }
+    }
+}
+
+
+.text3{
+    animation: cssAnimation 0s 4.0s forwards;
+    visibility: hidden;
+    @keyframes cssAnimation {
+        to   { visibility: visible; }
+    }
+}

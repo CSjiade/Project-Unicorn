@@ -1,6 +1,8 @@
 import React from 'react';
 // import getS3AssetUrl from '../../../util/aws_url_generator';
-import PageVideo from '../../images/a.gif';
+import PageGIF from '../../images/a.gif';
+import PageVideo from '../../images/a.mp4';
+import './hero.css';
 
 import {
   HeroContainer,
@@ -25,23 +27,34 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        {/* <VideoBg
+        <VideoBg
           autoPlay
           loop
           muted
         >
           <source
-            src={RsAppLogo}
+            src={PageVideo}
             type='video/mp4'
           />
-        </VideoBg> */}
-        <HeroImg src={PageVideo} alt='intro video' />
+        </VideoBg>
+        {/* <HeroImg src={PageVideo} alt='intro video' /> */}
       </HeroBg>
       <HeroContent>
       <HeroH1>Connecting</HeroH1>
-      <HeroP>People, Capital and Businesses</HeroP>
-      </HeroContent>
+      <HeroP>
+        <span class = "text1">
+          People{' '} | {' '} 
+        </span>
 
+        <span class = "text2">
+          Capital{' '} | {' '}
+        </span>
+
+        <span class = "text3">
+           Business
+        </span>
+      </HeroP>
+      </HeroContent>
     </HeroContainer>
   );
 };
