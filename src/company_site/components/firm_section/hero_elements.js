@@ -84,15 +84,15 @@ export const HeroH1 = styled.p`
     visibility: hidden;
 
 
-    @media screen and (max-width: 768px) {
-        font-size: 58px;
+    @media screen and (max-width: 850px) {
+        font-size: 20px;
         font-family: 'cursive';
     }
 
-    @media screen and (max-width: 480px) {
-        font-size: 18px;
-        font-family: 'cursive';
-    }
+    // @media screen and (max-width: 480px) {
+    //     font-size: 18px;
+    //     font-family: 'cursive';
+    // }
 
     @keyframes cssAnimation {
         to   { visibility: visible; }
@@ -108,15 +108,15 @@ animation-delay: 5s;
     max-width: 600px;
     font-family: cursive;
     
-    @media screen and (max-width: 768px) {
-        font-size: 34px;
+    @media screen and (max-width: 850px) {
+        font-size: 20px;
         font-family: 'cursive';
     }
 
-    @media screen and (max-width: 480px) {
-        font-size: 12px;
-        font-family: 'cursive';
-    }
+    // @media screen and (max-width: 480px) {
+    //     font-size: 12px;
+    //     font-family: 'cursive';
+    // }
 
 `;
 

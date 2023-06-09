@@ -28,9 +28,8 @@ const AboutSection = () => {
             <Typography variant="h6" className={classes.header}>Who we are</Typography>
             <Typography variant="h3" className={classes.subHeader}>M&A Specialist</Typography>
             <Typography variant="body1" className={classes.bodyText}>
-              Mira Capital Markets specialises in providing transparent, fair and strategic M&A solutions 
-              for entrepreneurs and businesses across Asia-Pacfic. We operate on a success-fee based system. 
-              There are no "retainer fees" or "interim fees", and we do not receive any fees until the M&A is closed.
+              Mira Capital Markets specialises in providing transparent, fair and strategic M&A solutions for businesses across Asia-Pacfic. We operate on a success-fee based system. 
+               There are no "retainer fees" or "interim fees", and we do not receive any fees until the M&A is closed.
             </Typography>
           </div>
         </Grid>
@@ -45,8 +44,7 @@ const AboutSection = () => {
             <Typography variant="h6" color="#FFD700" className={classes.header}>What We Provide</Typography>
             <Typography variant="h3" className={classes.subHeader}>One Stop M&A Service</Typography>
             <Typography variant="body1" className={classes.bodyText}>
-              We provide end-to-end support across the M&A process  
-              from strategic evaluation of your business, business valuation, preparation for sale, sourcing of potential buyers, to deal negotiation and closure.<br />
+              We provide end-to-end support across the M&A process from strategic evaluation of your business, business valuation, preparation for sale, sourcing of potential buyers, to deal negotiation and closure.<br />
               <br />
               Keen to explore selling your business? Come speak with us and let use help you achieve the best transaction price
             </Typography>
