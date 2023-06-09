@@ -2,11 +2,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const AboutSectionStyles = makeStyles((theme) => ({
   aboutContainer: {
-    padding: '24px',
+    paddingTop: '20px',
+    paddingLeft: '10px',
+    paddingRight: '10px',
     background: '#000',
+    
   },
   cardContainer: {
-    padding: '24px',
+    paddingBottom: '20px',
     height: 'fit-content',
   },
   imageContainer: {
@@ -14,7 +17,7 @@ const AboutSectionStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-    borderRadius: '24px',
+    // borderRadius: '24px',
     minHeight: '300px',
     [theme.breakpoints.up('md')]: {
       minHeight: '400px',

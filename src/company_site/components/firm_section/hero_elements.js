@@ -37,11 +37,20 @@ export const HeroContainer = styled.div`
 /* Add :before styles */
 
 export const HeroBg = styled.div`
+    // position: absolute;
+    // top: 80px;
+    // // right: 0;
+    // bottom: 0;
+    // // left: 0;
+    // // width: 100%;
+    // // height: 100%;
+    // overflow: hidden;
+    
     position: absolute;
-    top: 80px;
-    // right: 0;
+    top: 10px;
+    right: 10px;
     bottom: 0;
-    // left: 0;
+    left: 10px;
     // width: 100%;
     // height: 100%;
     overflow: hidden;
@@ -72,6 +81,7 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 `;
 
 export const HeroH1 = styled.p`
@@ -82,11 +92,13 @@ export const HeroH1 = styled.p`
     font-family: cursive;
     animation: cssAnimation 0s 1.0s forwards;
     visibility: hidden;
-
-
+    
     @media screen and (max-width: 850px) {
         font-size: 20px;
         font-family: 'cursive';
+        margin-top: 3rem;
+       
+       
     }
 
     // @media screen and (max-width: 480px) {

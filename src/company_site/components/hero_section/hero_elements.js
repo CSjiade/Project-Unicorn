@@ -38,10 +38,10 @@ export const HeroContainer = styled.div`
 
 export const HeroBg = styled.div`
     position: absolute;
-    top: 80px;
-    // right: 0;
+    top: 10px;
+    right: 10px;
     bottom: 0;
-    // left: 0;
+    left: 10px;
     // width: 100%;
     // height: 100%;
     overflow: hidden;

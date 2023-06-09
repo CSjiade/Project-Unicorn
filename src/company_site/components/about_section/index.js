@@ -23,17 +23,17 @@ const AboutSection = () => {
   return (
     <Grid id="about" className={classes.aboutContainer} container>
       <Grid className={classes.cardContainer} container item xs={12}>
+      <Grid className={classes.imageContainer} style={imageBg2} item xs={12} md={6}>
+        </Grid>
         <Grid className={classes.textContainer} item xs={12} md={6}>
           <div>
             <Typography variant="h6" className={classes.header}>Who we are</Typography>
-            <Typography variant="h3" className={classes.subHeader}>M&A Specialist</Typography>
+            <Typography variant="h3" className={classes.subHeader}>M&A Solutions</Typography>
             <Typography variant="body1" className={classes.bodyText}>
               Mira Capital Markets specialises in providing transparent, fair and strategic M&A solutions for businesses across Asia-Pacfic. We operate on a success-fee based system. 
                There are no "retainer fees" or "interim fees", and we do not receive any fees until the M&A is closed.
             </Typography>
           </div>
-        </Grid>
-        <Grid className={classes.imageContainer} style={imageBg2} item xs={12} md={6}>
         </Grid>
       </Grid>
       <Grid className={classes.cardContainer} container item xs={12}>

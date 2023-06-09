@@ -4,14 +4,30 @@ import ServiceData from "./serviceData"
 import Service1 from "./a.jpg"
 import Service2 from "./b.jpg"
 import Service3 from "./c.jpg"
+import { withStyles } from "@material-ui/core/styles";
+import Typography from '@material-ui/core/Typography';
+
+const ColorTextTypography = withStyles({
+    root: {
+      color: "#FFD700"
+    }
+  })(Typography);
 
 
 function service() {
     return (
         <div className="service" >
-            <h1 id="service">
+
+            {/* <h1 id="service">
               Services  
-            </h1>
+            </h1> */}
+
+            <ColorTextTypography variant="h4" component="h4" >
+             <center>Services</center>
+            </ColorTextTypography>
+
+
+
             <h3 class = "subheader">
             Transparent {' '} | {' '} Fair  {' '} | {' '} Strategic
             </h3>
