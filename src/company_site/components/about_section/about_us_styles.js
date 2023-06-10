@@ -13,12 +13,13 @@ const AboutSectionStyles = makeStyles((theme) => ({
     height: 'fit-content',
   },
   imageContainer: {
+  
     padding: '4.5em',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     // borderRadius: '24px',
-    minHeight: '300px',
+    minHeight: '200px',
     [theme.breakpoints.up('md')]: {
       minHeight: '400px',
     },
@@ -26,7 +27,7 @@ const AboutSectionStyles = makeStyles((theme) => ({
   textContainer: {
     height: '100%',
     display: 'grid',
-    padding: '1.5em',
+    padding: '1em',
     justifyContent: 'center',
     alignContent: 'center',
   },
@@ -39,8 +40,11 @@ const AboutSectionStyles = makeStyles((theme) => ({
     fontWeight: 'bold',
   },
   bodyText: {
-    textAlign:"justify"
+    textAlign:"left",  
+    wordSpacing:"-1px",
+    
   }
+  
 }));
 
 export default AboutSectionStyles;

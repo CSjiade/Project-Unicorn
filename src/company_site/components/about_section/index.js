@@ -44,7 +44,8 @@ const AboutSection = () => {
             <Typography variant="h6" color="#FFD700" className={classes.header}>What We Provide</Typography>
             <Typography variant="h3" className={classes.subHeader}>One Stop M&A Service</Typography>
             <Typography variant="body1" className={classes.bodyText}>
-              We provide end-to-end support across the M&A process from strategic evaluation of your business, business valuation, preparation for sale, sourcing of potential buyers, to deal negotiation and closure.<br />
+              We provide end-to-end support across the M&A process from strategic evaluation of your business, business valuation, 
+              preparation for sale, sourcing of potential buyers, to deal negotiation and closure.<br />
               <br />
               Keen to explore selling your business? Come speak with us and let use help you achieve the best transaction price
             </Typography>

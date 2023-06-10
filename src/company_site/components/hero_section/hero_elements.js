@@ -9,7 +9,7 @@ export const HeroContainer = styled.div`
     align-items: center;
     padding: 0 30px;
     height: 115vh;
-    max-height: 70vw;
+    max-height: 150vw;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -85,8 +85,7 @@ export const HeroH1 = styled.p`
 
 
     @media screen and (max-width: 850px) {
-        font-size: 20px;
-        font-family: 'cursive';
+        font-size: 40px;
     }
 
     // @media screen and (max-width: 480px) {
@@ -109,8 +108,7 @@ animation-delay: 5s;
     font-family: cursive;
     
     @media screen and (max-width: 850px) {
-        font-size: 20px;
-        font-family: 'cursive';
+        font-size: 30px;
     }
 
     // @media screen and (max-width: 480px) {
