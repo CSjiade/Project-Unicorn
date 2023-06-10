@@ -16,7 +16,7 @@ const ColorTextTypography = withStyles({
 
 function service() {
     return (
-        <div className="service" >
+        <div className="service" id="service" >
 
             {/* <h1 id="service">
               Services  

@@ -42,9 +42,7 @@ const AboutSectionStyles = makeStyles((theme) => ({
   bodyText: {
     textAlign:"left",  
     wordSpacing:"-1px",
-    
   }
-  
 }));
 
 export default AboutSectionStyles;
