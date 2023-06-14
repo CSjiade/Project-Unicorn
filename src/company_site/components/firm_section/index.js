@@ -42,13 +42,13 @@ const HeroSection = () => {
       <HeroContent>
       <HeroH1>Empowering</HeroH1>
       <HeroP>
-        <span class = "text1">
+        <span class = "firm_text1">
           Entrepreneurs{' '} | {' '} 
         </span>
-        <span class = "text2">
+        <span class = "firm_text2">
           Businesses{' '} | {' '}
         </span>
-        <span class = "text3">
+        <span class = "firm_text3">
            Economies
         </span>
       </HeroP>

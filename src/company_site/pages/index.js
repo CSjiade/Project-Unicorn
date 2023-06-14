@@ -20,11 +20,7 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggle={toggle} />
       <HeroSection />
       <AboutSection/>
-      {/* <ServicesSection/> */}
       <ServiceSection/>
-      {/* <ProductsSection />
-      <GallerySection /> */}
-      
       <Footer />
     
     </React.Fragment>

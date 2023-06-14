@@ -1,0 +1,136 @@
+.body {
+  background-image: url(./bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #0c0c0c;
+  padding-bottom: 100px;
+}
+
+
+.aaa{
+  margin: 0px;
+  padding-top: 100px;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+
+.form{
+  background: rgba(27,31,34,0.80);
+  width: 640px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+}
+
+
+
+form .title h2{
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+
+
+
+form .half{
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input{
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 100%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full{
+  margin-bottom: 24px;
+}
+
+form .full textarea{
+  color: white;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  font-size: 17px;
+}
+
+form .action{
+  margin-bottom: 32px;
+}
+
+
+
+
+form .action button{
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+form .action button[type="submit"]{
+  background: gold;
+}
+
+
+form .half .item input:focus, form .full textarea:focus, form .action button[type="submit"]:hover, form .icons a:hover{
+  background: rgba(255,255,255,0.075);
+}
+
+
+.form .half .item p{
+  color: rgba(255, 0, 0, 0.488);
+}
+
+
+.gmap {
+  margin: 0 auto !important;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+
+

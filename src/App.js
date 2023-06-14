@@ -13,6 +13,7 @@ const Records = React.lazy(() => import('./company_site/components/records_secti
 const BlogPage = React.lazy(() => import('./company_site/pages/press'));
 const ProjectPage = React.lazy(() => import('./company_site/pages/projects'));
 const FirmPage = React.lazy(() => import('./company_site/pages/firm'));
+const ContactPage =  React.lazy(() => import('./company_site/pages/contact_us'));
 
 const BlogPost1 = React.lazy(() => import('./company_site/components/blog_section/blogs/China-M&A Market-review'));
 const BlogPost2 = React.lazy(() => import('./company_site/components/blog_section/blogs/Asia-Pacific-M&A-Q1-2023'));
@@ -47,6 +48,10 @@ function App() {
 
         <Route path="/firm">
           <FirmPage />
+        </Route>
+
+        <Route path="/contact">
+          <ContactPage />
         </Route>
 
         <Route path="/blog/China-M&A Market-review">

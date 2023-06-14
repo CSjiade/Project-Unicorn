@@ -199,6 +199,17 @@ const NavBar = ({ toggle }) => {
             </li>
 
 
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                to={"/contact"}
+                onClick={startFromTop}
+              >
+                Contact Us
+              </NavLink>             
+            </li>
+
+
 
             {/* <li className="nav-item">
               <HashLink

@@ -1,7 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 import AppLogo from './company_site/images/alogo.png';
-
 import animationData from './resources/splashscreen.json';
 import { withTheme } from './util/theme';
 import { makeStyles } from '@material-ui/core/styles';
@@ -51,7 +50,7 @@ const SplashScreen = (props) => {
     }
   };
   return <div className={splashClasses.root}>
-    <img className={splashClasses.logo} id="rs-splash-logo" src={AppLogo} alt='Robosolutiosn Logo' />
+    <img className={splashClasses.logo} id="rs-splash-logo" src={AppLogo} alt='Logo' />
     <Lottie 
       className={splashClasses.anim}
       options={defaultOptions}
