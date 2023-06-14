@@ -76,10 +76,9 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.p`
     color: white;
-    // color:#FFD700;
     font-size: 58px;
     text-align: center;
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;;
     animation: cssAnimation 0s 2.0s forwards;
     visibility: hidden;
 
@@ -88,10 +87,6 @@ export const HeroH1 = styled.p`
         font-size: 40px;
     }
 
-    // @media screen and (max-width: 480px) {
-    //     font-size: 18px;
-    //     font-family: 'cursive';
-    // }
 
     @keyframes cssAnimation {
         to   { visibility: visible; }
@@ -105,16 +100,12 @@ animation-delay: 5s;
     font-size: 34px;
     text-align: center;
     max-width: 600px;
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
     
     @media screen and (max-width: 850px) {
         font-size: 30px;
     }
 
-    // @media screen and (max-width: 480px) {
-    //     font-size: 12px;
-    //     font-family: 'cursive';
-    // }
 
 `;
 

@@ -26,8 +26,6 @@ function service() {
              <center>Services</center>
             </ColorTextTypography>
 
-
-
             <h3 class = "subheader">
             Transparent {' '} | {' '} Fair  {' '} | {' '} Strategic
             </h3>
