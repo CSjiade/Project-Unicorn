@@ -52,9 +52,6 @@ const SideBar = ({ toggle, isOpen }) => {
             Projects
           </SidebarLink> */}
 
-          <SidebarRoute to="/firm" onClick={toggle}>
-            The Firm
-          </SidebarRoute>
 
           {/* <SidebarLink to="/#gallery" onClick={toggle} scroll={scrollWithOffset}>
             Values 
@@ -64,6 +61,14 @@ const SideBar = ({ toggle, isOpen }) => {
           </SidebarLink> */}
           <SidebarRoute to="/blog" onClick={toggle}>
             Media
+          </SidebarRoute>
+
+          <SidebarRoute to="/firm" onClick={toggle}>
+            The Firm
+          </SidebarRoute>
+
+          <SidebarRoute to="/contact" onClick={toggle}>
+            Contact Us
           </SidebarRoute>
           
         </SidebarMenu>
