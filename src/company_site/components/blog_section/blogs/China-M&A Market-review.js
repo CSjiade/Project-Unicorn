@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import NavBar from '../../navbar';
 import SideBar from '../../sidebar';
+import SideBar2 from '../../sidebar2';
 import Footer from '../../footer';
 import { Typography } from '@material-ui/core';
 import BlogStyles from './blog_styles';
@@ -26,7 +27,7 @@ const BlogPost1 = () => {
   return (
     <React.Fragment>
       <NavBar toggle={toggle} />
-      <SideBar isOpen={isOpen} toggle={toggle} />
+      <SideBar2 isOpen={isOpen} toggle={toggle} />
       <div style={{ height: "80px" }} />
       <div id="blog" className={blogStyles.blogContainer}>
         <Typography className={blogStyles.blogTitle} variant='h3'>
