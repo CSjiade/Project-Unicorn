@@ -1,7 +1,6 @@
 import React from 'react';
 // import getS3AssetUrl from '../../../util/aws_url_generator';
-import PageGIF from '../../images/a.gif';
-import PageVideo from '../../images/a.mp4';
+import PageVideo from '../../images/a1.mp4';
 import './hero.css';
 
 import {

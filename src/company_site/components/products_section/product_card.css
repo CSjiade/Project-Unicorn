@@ -107,7 +107,7 @@
 }
 
 .expanding-collection-cover img{
-  width:100%;
+  width: 100%;
   border-radius:var(--expanding-collection-cover-border-radius);
   display:block;
   margin:0;

@@ -25,7 +25,6 @@ const SideBar = ({ toggle, isOpen }) => {
     window.scrollTo(0,0);
     toggle=false;
   }
-
   return (
     <SidebarContainer isOpen={isOpen}>
       <Icon onClick={toggle}>
@@ -59,15 +58,15 @@ const SideBar = ({ toggle, isOpen }) => {
           {/* <SidebarLink to="/#footer" onClick={toggle} scroll={scrollWithOffset}>
             Contact Us
           </SidebarLink> */}
-          <SidebarRoute to="/blog" onClick={toggle}>
+          <SidebarRoute to="/blog" onClick={toggle} scroll={startFromTop}>
             Media
           </SidebarRoute>
 
-          <SidebarRoute to="/firm" onClick={toggle}>
+          <SidebarRoute to="/firm" onClick={toggle} scroll={startFromTop}>
             The Firm
           </SidebarRoute>
 
-          <SidebarRoute to="/contact" onClick={toggle}>
+          <SidebarRoute to="/contact" onClick={toggle} scroll={startFromTop}>
             Contact Us
           </SidebarRoute>
           

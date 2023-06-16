@@ -5,14 +5,14 @@ import { Link as LinkS } from 'react-scroll';
 import { HashLink } from 'react-router-hash-link';
 import { animateScroll as scroll } from 'react-scroll';
 import AppLogo from '../../images/alogo.png';
-
 import './navbar.css';
 import { withTheme } from '../../../util/theme';
-
+import Dropdown from "./Dropdown";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(true);
+  const [dropdown, setDropdown] = useState(false);
 
   const navListener = () => {
     // if (window.scrollY >= 80) {
@@ -128,11 +128,8 @@ const NavBar = ({ toggle }) => {
                 onClick={startFromTop}
               >
                 Projects
-              </NavLink>             
+              </NavLink>        
             </li>
-
-
-
 
             {/* <li className="nav-item">
               <HashLink
@@ -176,7 +173,7 @@ const NavBar = ({ toggle }) => {
               </LinkS>
             </li> */}
 
-
+{/* 
             <li className="nav-item">
               <NavLink
                 className="nav-link"
@@ -185,10 +182,10 @@ const NavBar = ({ toggle }) => {
               >
                 Media
               </NavLink>             
-            </li>
+            </li> */}
 
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 className="nav-link"
                 to={"/firm"}
@@ -196,9 +193,9 @@ const NavBar = ({ toggle }) => {
               >
                 The Firm
               </NavLink>             
-            </li>
+            </li> */}
 
-
+{/* 
             <li className="nav-item">
               <NavLink
                 className="nav-link"
@@ -207,7 +204,48 @@ const NavBar = ({ toggle }) => {
               >
                 Contact Us
               </NavLink>             
+            </li> */}
+
+
+            {/* <li
+                className= "nav-item"
+                onMouseEnter={() => setDropdown(true)}
+                onMouseLeave={() => setDropdown(false)}
+              >
+                  <NavLink
+                  className="nav-link"
+                  to={"/projects"}
+                  onClick={startFromTop}
+                  >
+                    About Us  
+                  </NavLink>
+                  {dropdown && <Dropdown />}
+                </li> */}
+
+              <li className="nav-item"
+                onMouseEnter={() => setDropdown(true)}
+                onMouseLeave={() => setDropdown(false)}
+              >
+              <HashLink
+                className="nav-link"
+                scroll={scrollWithOffset}
+                to="/firm"
+                >
+               The Firm
+              </HashLink>
+              <LinkS
+                className="nav-link-background"
+                to="firm"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}>
+                The Firm
+              </LinkS>
+              {dropdown && <Dropdown />}
             </li>
+
 
 
 

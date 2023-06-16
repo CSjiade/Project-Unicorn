@@ -1,12 +1,13 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import './App.css';
-import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter , Route, Redirect, Switch } from 'react-router-dom';
 import useAuth from './company_site/hooks/auth_hook';
 import { AuthContext } from './company_site/components/shared/auth_context';
 import { makeStyles } from '@material-ui/core/styles';
 import Backdrop from '@material-ui/core/Backdrop';
 import ScaleLoader from 'react-spinners/ScaleLoader';
 import SplashScreen from './splashscreen';
+
 
 const Home = React.lazy(() => import('./company_site/pages/index'));
 const Records = React.lazy(() => import('./company_site/components/records_section'));
@@ -19,6 +20,10 @@ const BlogPost1 = React.lazy(() => import('./company_site/components/blog_sectio
 const BlogPost2 = React.lazy(() => import('./company_site/components/blog_section/blogs/Asia-Pacific-M&A-Q1-2023'));
 
 
+
+
+
+
 /**
  * Application's entry point, contains the oruter and routes
  * amongst other things
@@ -29,7 +34,9 @@ function App() {
   let routes;
   if (!token) {
     routes = (
+     
       <Switch>
+       
         <Route path="/" exact>
           <Home />
         </Route>
@@ -63,7 +70,6 @@ function App() {
         <Route path="/blog/Asia-Pacific-M&A-Q1-2023">
           <BlogPost2/>
           </Route>
-
 
       </Switch>
 
