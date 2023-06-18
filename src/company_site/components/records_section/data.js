@@ -34,7 +34,7 @@ export const data = [
     img: record4,
     category: "Business Valuation",
     title: "Regional Business Dynamics (RBD)",
-    desc: "Consultant for RBD's 2.0M SGD strategic acquisition",
+    desc: "Consultant for RBD's 2.0M SGD strategic growth acquisition ",
   },
   {
     id: 5,
