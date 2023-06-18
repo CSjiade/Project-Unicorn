@@ -78,10 +78,9 @@ export const HeroH1 = styled.p`
     color: white;
     font-size: 58px;
     text-align: center;
-    font-family: 'Dancing Script', cursive;;
+    font-family: cursive, 'sans-serif';
     animation: cssAnimation 0s 2.0s forwards;
     visibility: hidden;
-
 
     @media screen and (max-width: 850px) {
         font-size: 40px;
@@ -100,7 +99,7 @@ animation-delay: 5s;
     font-size: 34px;
     text-align: center;
     max-width: 600px;
-    font-family: 'Dancing Script', cursive;
+    font-family: cursive, 'sans-serif';
     
     @media screen and (max-width: 850px) {
         font-size: 30px;

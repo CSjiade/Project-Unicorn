@@ -60,8 +60,10 @@ const Sidebar = ({ toggle, isOpen }) => {
 
   const SideBarProjectsData = [
     {
-      title: 'Project',
-      icon: <BsIcons.BsBriefcase/>
+      title: 'Projects',
+      icon: <BsIcons.BsBriefcase/>,
+      iconClosed: <RiIcons.RiArrowDownSFill />,
+      iconOpened: <RiIcons.RiArrowUpSFill />,
     },
   ]
 
@@ -93,6 +95,21 @@ const Sidebar = ({ toggle, isOpen }) => {
   ]
 
 
+
+  const SideBarProjectSubData = [
+    {
+      title: 'Live',
+      path: '/projects',
+      icon: ''
+    },
+    {
+      title: 'Past',
+      path: '/records',
+      icon: ''
+    },
+  ]
+
+
   return (
     <>
        <SidebarWrap>
@@ -100,9 +117,11 @@ const Sidebar = ({ toggle, isOpen }) => {
        <SubMenu path = {"/#home"} submenu={null} item = {SideBarHomeData} toggle={toggle} />
        <SubMenu path = {"/#about"} submenu={null} item = {SideBarAboutData} onClick={toggle} />
        <SubMenu path = {"/#service"} submenu={null} item = {SideBarServiceData} onClick={toggle} />
-       <SubMenu path = {"/projects"} submenu={null} item = {SideBarProjectsData}  onClick={toggle} />
        </SidebarWrapper>
+
+       <SubMenu path = {usePathname()} submenu={SideBarProjectSubData} item = {SideBarProjectsData}   isOpen={isOpen} toggle={toggle}  />
        <SubMenu path = {usePathname()} submenu={SideBarFirmSubData} item = {SideBarFirmData} isOpen={isOpen} toggle={toggle} />
+
       </SidebarWrap>
       {/* {SidebarData.map((item, index) => {
               return <SubMenu path = {"/contact"} item={item} key={index} isOpen={isOpen} toggle={toggle} />;

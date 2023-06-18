@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core';
+import image from "./bg2.jpg"
 
 const psStyle = makeStyles((theme) => ({
   productRoot: {
@@ -12,6 +13,22 @@ const psStyle = makeStyles((theme) => ({
     paddingBottom: '100px',
     // background: theme.palette.primary.light,
     // flexGrow: 1,
+    // background-size: cover;
+    // background-color: grey;
+    // background-blend-mode: multiply;
+    // backgroundImage:`url(${image})`, backgroundSize:"contain"
+    backgroundSize: 'cover',
+    backgroundColor: 'grey',
+    backgroundBlendMode: 'multiply',
+    backgroundPosition:"centre",
+    backgroundImage: `url(${image})`,
+    backgroundRepeat: 'no-repeat',
+    // width: '100vw',
+    // height: '100vh'
+
+    
+
+    
   },
   sectionHeader: {
     padding: '10px',

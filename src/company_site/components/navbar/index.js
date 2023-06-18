@@ -8,11 +8,14 @@ import AppLogo from '../../images/alogo.png';
 import './navbar.css';
 import { withTheme } from '../../../util/theme';
 import Dropdown from "./Dropdown";
+import DropdownProjects from "./Dropdown_projects";
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const NavBar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(true);
   const [dropdown, setDropdown] = useState(false);
+
+  const [dropdownProject, setDropdownProject] = useState(false);
 
   const navListener = () => {
     // if (window.scrollY >= 80) {
@@ -121,7 +124,7 @@ const NavBar = ({ toggle }) => {
             </li>
             
             
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 className="nav-link"
                 to={"/projects"}
@@ -129,98 +132,36 @@ const NavBar = ({ toggle }) => {
               >
                 Projects
               </NavLink>        
+            </li> */}
+
+
+
+              <li className="nav-item"
+                onMouseEnter={() => setDropdownProject(true)}
+                onMouseLeave={() => setDropdownProject(false)}
+              >
+              <HashLink
+                className="nav-link"
+                scroll={scrollWithOffset}
+                to="/projects"
+                >
+               Projects
+              </HashLink>
+              <LinkS
+                className="nav-link-background"
+                to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}>
+                Projects
+              </LinkS>
+              {dropdownProject && <DropdownProjects />}
             </li>
 
-            {/* <li className="nav-item">
-              <HashLink
-                className="nav-link"
-                scroll={scrollWithOffset}
-                to="/#products"
-              >
-                Projects
-              </HashLink>
-              <LinkS
-                className="nav-link-background"
-                to="products"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Projects
-              </LinkS>
-            </li> */}
-
-            {/* <li className="nav-item">
-              <HashLink
-                className='nav-link'
-                scroll={scrollWithOffset}
-                to="/#gallery"
-              >
-               Values
-              </HashLink>
-              <LinkS
-                className="nav-link-background"
-                to="gallery"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Values
-              </LinkS>
-            </li> */}
-
-{/* 
-            <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                to={"/blog"}
-                onClick={startFromTop}
-              >
-                Media
-              </NavLink>             
-            </li> */}
 
 
-            {/* <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                to={"/firm"}
-                onClick={startFromTop}
-              >
-                The Firm
-              </NavLink>             
-            </li> */}
-
-{/* 
-            <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                to={"/contact"}
-                onClick={startFromTop}
-              >
-                Contact Us
-              </NavLink>             
-            </li> */}
-
-
-            {/* <li
-                className= "nav-item"
-                onMouseEnter={() => setDropdown(true)}
-                onMouseLeave={() => setDropdown(false)}
-              >
-                  <NavLink
-                  className="nav-link"
-                  to={"/projects"}
-                  onClick={startFromTop}
-                  >
-                    About Us  
-                  </NavLink>
-                  {dropdown && <Dropdown />}
-                </li> */}
 
               <li className="nav-item"
                 onMouseEnter={() => setDropdown(true)}

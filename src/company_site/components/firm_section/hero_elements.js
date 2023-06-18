@@ -89,7 +89,7 @@ export const HeroH1 = styled.p`
     // color:#FFD700;
     font-size: 58px;
     text-align: center;
-    font-family:'Dancing Script', cursive;
+    font-family: cursive, 'sans-serif';
     animation: cssAnimation 0s 0.5s forwards;
     visibility: hidden;
     
@@ -115,17 +115,12 @@ animation-delay: 5s;
     font-size: 34px;
     text-align: center;
     max-width: 2000px;
-    font-family: 'Dancing Script', cursive;
+    font-family: cursive, 'sans-serif';
     
     @media screen and (max-width: 850px) {
         font-size: 20px;
         
     }
-
-    // @media screen and (max-width: 480px) {
-    //     font-size: 12px;
-    //     font-family: 'cursive';
-    // }
 
 `;
 

@@ -24,3 +24,19 @@ export const serviceDropdown = [
     //   cName: "submenu-item",
     // },
   ];
+
+
+  export const ProjectsDropdown = [
+    {
+      id: 1,
+      title: "Live",
+      path: "/projects",
+      cName: "submenu-item",
+    },
+    {
+      id: 2,
+      title: "Past",
+      path: "/records",
+      cName: "submenu-item",
+    },
+  ];

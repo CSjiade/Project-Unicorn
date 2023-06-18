@@ -1,41 +1,31 @@
-import React, { useState } from 'react';
-import items from './data'
-import Menu from './Menu'
-import Button from './Button';
-import './styles/records.css'
+import React, { useState, ImageBackground} from "react";
+import image from "./bg2.jpg"
+import "./records.css";
+import { data } from "./data";
+import Card from "./Card";
+import Button from "./Button";
 
-const allCategories = ['All', ...new Set(items.map(item => item.category))];
+const RecordsSection = () => {
+  const [cards, setCards] = useState(data);
+  const cats = ["all", ...new Set(data.map((card) => card.category))];
 
-console.log(allCategories);
-
-const RecordsSection = () =>  {
-  const [menuItem, setMenuItem] = useState(items);
-  const [buttons, setButtons] = useState(allCategories);
-
-  //Filter Function
-  const filter = (button) =>{
-
-    if(button === 'All'){
-      setMenuItem(items);
+  const filter = (cat) => {
+    if (cat === "all") {
+      setCards(data);
       return;
     }
-
-    const filteredData = items.filter(item => item.category ===  button);
-    setMenuItem(filteredData)
-  }
+    setCards(data.filter((item) => item.category === cat));
+  };
 
   return (
-    <div className="Records">
-       <div className="title">
-         <h1 className="title-header">
-           Past Transactions
-         </h1>
-       </div>
+    <div className="Record"  style={{ backgroundImage:`url(${image})`, backgroundSize:"contain" }}>
+      <h1>Our Track Record</h1>
+      <Button categories={cats} handleClick={filter} />
+      <Card allcards={cards} />
+      </div>
 
-      <Button button={buttons} filter={filter} />
-       <Menu menuItem={menuItem}/>
-
-    </div>
+   
+   
   );
 }
 

@@ -10,11 +10,11 @@ import SplashScreen from './splashscreen';
 
 
 const Home = React.lazy(() => import('./company_site/pages/index'));
-const Records = React.lazy(() => import('./company_site/components/records_section'));
 const BlogPage = React.lazy(() => import('./company_site/pages/press'));
 const ProjectPage = React.lazy(() => import('./company_site/pages/projects'));
 const FirmPage = React.lazy(() => import('./company_site/pages/firm'));
 const ContactPage =  React.lazy(() => import('./company_site/pages/contact_us'));
+const RecordPage =  React.lazy(() => import('./company_site/pages/records'));
 
 const BlogPost1 = React.lazy(() => import('./company_site/components/blog_section/blogs/China-M&A Market-review'));
 const BlogPost2 = React.lazy(() => import('./company_site/components/blog_section/blogs/Asia-Pacific-M&A-Q1-2023'));
@@ -53,6 +53,13 @@ function App() {
           <ProjectPage />
         </Route>
 
+        <Route path="/records">
+          <RecordPage />
+        </Route>
+
+
+
+
         <Route path="/firm">
           <FirmPage />
         </Route>
@@ -64,9 +71,7 @@ function App() {
         <Route path="/blog/China-M&A Market-review">
           <BlogPost1/>
         </Route>
-  
 
-       
         <Route path="/blog/Asia-Pacific-M&A-Q1-2023">
           <BlogPost2/>
           </Route>
