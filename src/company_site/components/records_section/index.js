@@ -7,10 +7,10 @@ import Button from "./Button";
 
 const RecordsSection = () => {
   const [cards, setCards] = useState(data);
-  const cats = ["all", ...new Set(data.map((card) => card.category))];
+  const cats = ["All", ...new Set(data.map((card) => card.category))];
 
   const filter = (cat) => {
-    if (cat === "all") {
+    if (cat === "All") {
       setCards(data);
       return;
     }

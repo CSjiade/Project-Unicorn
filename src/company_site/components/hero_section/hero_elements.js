@@ -78,7 +78,7 @@ export const HeroH1 = styled.p`
     color: white;
     font-size: 58px;
     text-align: center;
-    font-family: cursive, 'sans-serif';
+    font-family: cursive, 'italic';
     animation: cssAnimation 0s 2.0s forwards;
     visibility: hidden;
 
@@ -99,7 +99,7 @@ animation-delay: 5s;
     font-size: 34px;
     text-align: center;
     max-width: 600px;
-    font-family: cursive, 'sans-serif';
+    font-family: cursive, 'italic';
     
     @media screen and (max-width: 850px) {
         font-size: 30px;

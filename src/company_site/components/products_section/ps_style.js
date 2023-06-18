@@ -25,10 +25,6 @@ const psStyle = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     // width: '100vw',
     // height: '100vh'
-
-    
-
-    
   },
   sectionHeader: {
     padding: '10px',

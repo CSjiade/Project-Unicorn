@@ -5,7 +5,7 @@ function Button({ categories, handleClick }) {
     return (
       <div className="button-container" key={index}>
         <button onClick={() => handleClick(category)}>
-          {category.toUpperCase()}
+          {category}
         </button>
       </div>
     );
