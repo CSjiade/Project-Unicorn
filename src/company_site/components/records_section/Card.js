@@ -4,10 +4,15 @@ function Card({ allcards }) {
   const cards = allcards.map((card) => {
     return (
       <div className="card-container" key={card.id}>
+
+        <p>{card.value}</p>
         <img src={card.img} alt="" />
         <div className="card-details">
           <h2>{card.title}</h2>
           <p >{card.desc}</p>
+          <p >{card.date}</p>
+
+
         
         </div>
       </div>
